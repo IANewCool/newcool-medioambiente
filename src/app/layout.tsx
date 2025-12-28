@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Medio Ambiente - NewCooltura Informada",
+  title: "Medio Ambiente Chile | NewCooltura Informada",
   description: "Oficinas SEREMI, reciclaje, calculadora huella de carbono, parques nacionales y normativa ambiental en Chile",
+  keywords: ["medio ambiente Chile", "reciclaje", "huella carbono", "parques nacionales", "SEREMI ambiente"],
+  openGraph: {
+    title: "Medio Ambiente Chile - NewCooltura Informada",
+    description: "Reciclaje, parques y normativa ambiental",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
